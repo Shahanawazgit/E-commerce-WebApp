@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce WebApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="res.css">
+    <script src="https://kit.fontawesome.com/2fe1a03117.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation section -->
+    <section id="header">
+        <a href="#"><img src="Images/logo.png" alt="no-img" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <a id="cross" href="#"><i class="fa-solid fa-xmark"></i></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-outdent"></i>
+        </div>
+    </section>
+
+    <!-- Cart Items section -->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="Images/products/f1.jpg" alt="no-img"></td>
+                    <td>Cartoon Astronaut Shirt</td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="Images/products/f2.jpg" alt="no-img"></td>
+                    <td>Cartoon Astronaut Shirt</td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="Images/products/f3.jpg" alt="no-img"></td>
+                    <td>Cartoon Astronaut Shirt</td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart_add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$234</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <td><strong>Total</strong></td>
+                <td><strong>$234</strong></td>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+
+    <!-- Footer sections -->
+    <footer class="section-p1">
+        <div class="container">
+            <div class="col">
+                <a href="#"><img class="logo" src="Images/logo.png" alt="no-img"></a>
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> 321, Wellington Road, Street 32, San Fransisco</p>
+                <p><strong>Phone:</strong> +01 2222 365 / +919876543210</p>
+                <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="Images/pay/app.jpg" alt="no-img">
+                    <img src="Images/pay/play.jpg" alt="no-img">
+                </div>
+                <p>Secured Payment Getways</p>
+                <img src="Images/pay/pay.png" alt="no-img">
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023, All rights reserved || Developed by Shahanawaz.
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
